@@ -12,16 +12,27 @@ $(document).ready(function() {
 	// });
 
 /*“Appeler” l’URL https://swapi.co/api/people/1/?format=json et afficher dans la console le “Name” retourné.*/
-	var swapi = "https://swapi.co/api/people/1/?format=json";
-	$.getJSON(swapi, function(json) {
-        console.log(json.name);
-    });
+	// var swapi1 = "https://swapi.co/api/people/1/?format=json";
+	// $.getJSON(swapi1, function(json) {
+ //        console.log(json.name);
+ //    });
 
 /* “Appeler” l’URL https://swapi.co/api/people/1/?format=json et afficher dans une balise <h2> le “Name”
 retourné. */
-    var swapi = "https://swapi.co/api/people/1/?format=json";
-	$.getJSON(swapi, function(json) {
-		$('h2').html(json.name);
+ //    var swapi2 = "https://swapi.co/api/people/1/?format=json";
+	// $.getJSON(swapi2, function(json) {
+	// 	$('h2').html(json.name);
+ //    });
+
+/* “Appeler” l’URL https://swapi.co/api/people/?format=json et afficher la listes des personnages. */
+    var swapi3 = "https://swapi.co/api/people/";
+	$.getJSON(swapi3, function(json) {
+		console.log(json);
+		// $.each(json, function(i, name){
+		$.each(json, function(element){
+			console.log(element);
+			// $('ul').append("<li>" + json.name + "</li>")
+		});
     });
 
 
