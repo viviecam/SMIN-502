@@ -7,10 +7,12 @@
 		<meta name="description">
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
-		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">		
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">	
+		<link rel="stylesheet" href="css/main.css">		
 		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/js/dist/modal.js"></script>
 		<script type="text/javascript" src="node_modules/swiper/dist/js/swiper.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
@@ -56,7 +58,7 @@
 				<div class="card">
 					<img id="img_hover" class="card-img-top" src="images/medium.jpg" alt="people">
 					<div class="card-block">
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <h2 id="name" class="card-text"></p>
 					</div>
 				</div>
 			</div>
@@ -80,11 +82,14 @@
 
 		<div class="row">
 			<div class="col-xs-12">
-				<h2></h2>
-				<h6>Liste des personnages</h6>
-				<ul>
+				<h1>The Star Wars characters</h6>
+				<div id="list-characters">
 
-				</ul>
+				</div>
+
+				<div id="details-characters">
+
+				<div>
 			</div>
 		</div>
 		
