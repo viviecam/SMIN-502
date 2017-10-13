@@ -28,10 +28,10 @@ retourné. */
     var swapi3 = "https://swapi.co/api/people/";
 	$.getJSON(swapi3, function(json) {
 		console.log(json);
-		// $.each(json, function(i, name){
-		$.each(json, function(element){
-			console.log(element);
-			// $('ul').append("<li>" + json.name + "</li>")
+		console.log(json.results);
+		$.each(json.results, function(){
+			console.log(this.name);
+			$('ul').append("<li>" + this.name + "</li>");
 		});
     });
 

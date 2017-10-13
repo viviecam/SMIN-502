@@ -2,7 +2,7 @@
   "name": "smin502",
   "version": "1.0.0",
   "description": "premiers pas npm bootstrap4",
-  "main": "index.js",
+  "main": "main.js",
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "popper.js": "^1.12.5",
