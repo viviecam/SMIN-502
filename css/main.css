@@ -6,9 +6,12 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.row {
+	margin-bottom: 35px;
+}
 
-#slider-home {
-	margin-bottom: 20px;
+nav.navbar {
+	background-color: black;
 }
 
 #characters {
