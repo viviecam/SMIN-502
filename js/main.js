@@ -1,4 +1,21 @@
 $(document).ready(function() {
+/* Swiper - Additional library */
+
+	var swiperHome = new Swiper ('.swiper-container.swiper-home', {
+    	direction: 'horizontal',
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+    	navigation: {
+    		nextEl: '.swiper-button-next',
+    		prevEl: '.swiper-button-prev',
+    	},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		}
+    })       
 
 /* Au survol d'une image */
 	// $( "img" ).hover(function() {
@@ -9,11 +26,11 @@ $(document).ready(function() {
 
 
 /* Afficher dans la console et dans le h2 le “Name” retourné.*/
-	// var swapi1 = "https://swapi.co/api/people/1/?format=json";
-	// $.getJSON(swapi1, function(json) {
-	// 	console.log(json.name);
-	// 	$('h2#name').html(json.name);
-	// });
+	var swapi1 = "https://swapi.co/api/people/1/?format=json";
+	$.getJSON(swapi1, function(json) {
+		console.log(json.name);
+		$('h2#name').html(json.name);
+	});
 
 
 /* Afficher la liste des personnages et générer leurs modales correspondantes */

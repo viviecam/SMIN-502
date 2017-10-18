@@ -1,0 +1,16 @@
+body {
+	background-size: cover;
+  	-webkit-background-size: cover;
+	background-image: url(../images/galaxy.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#slider-home {
+	margin-bottom: 20px;
+}
+
+#characters {
+	color: white;
+}
