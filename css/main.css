@@ -18,10 +18,6 @@ nav.navbar {
 	padding: 10px;
 }
 
-#characters, h1 {
+#characters, #cards h1 {
 	color: white;
-}
-
-.modal {
-	color: black;
 }

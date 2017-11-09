@@ -8,110 +8,110 @@
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
-		<!-- <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.css"> -->
 		<link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="node_modules/bootstrap/js/dist/modal.js"></script>
-		<!-- <script type="text/javascript" src="node_modules/swiper/dist/js/swiper.js"></script> -->
 		<script type="text/javascript" src="node_modules/swiper/dist/js/swiper.min.js"></script>
-		<!-- <script type="text/javascript" src="node_modules/swiper/dist/js/swiper.esm.bundle.js"></script> -->
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 
 	<body>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand" href="#"><img src="images/logo.png" width="110px" /></a> 
-		  	<!-- <a class="navbar-brand" href="#">Star Wars - Camille Vivier</a> -->
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.png" width="110px" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#characters">All the characters</a>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
-	</header>
-
-
-	<div class="container">
-		<div id="slider-home" class="row">
-			<div class="col-12">
-				<!-- <img class="img-fluid" src="images/large.jpg" alt="image1"> -->
-				<!-- Swiper - Addtional Librairy -->
-				<div class="swiper-container swiper-home">
-					<div class="swiper-wrapper">
-				        <div class="swiper-slide"><img class="img-fluid" src="images/sw1.jpg" alt="image1"></div>
-				        <div class="swiper-slide"><img class="img-fluid" src="images/sw2.jpg" alt="image1"></div>
-				        <div class="swiper-slide"><img class="img-fluid" src="images/sw3.jpg" alt="image1"></div>
-				    </div>
-				    <div class="swiper-pagination swiper-pagination-bullets "></div>
-				    <div class="swiper-button-prev"></div>
-				    <div class="swiper-button-next"></div>
-					<div class="swiper-scrollbar"></div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#characters">All the characters</a>
+						</li>
+					</ul>
 				</div>
-			</div>
-		</div>
+			</nav>
+		</header>
 
-		<div id="characters" class="row">
-			<div class="col-12">	
-				<h1 class="text-center">The Star Wars characters</h6>
-				<ol class="row" id="list-characters">
 
-				</ol>
-
-				<div id="details-characters">
-
-				</div>
-				<div class="text-center">
-					<button id="plusbutton" class="btn btn-secondary">See more</button>
-				</div>
-			</div>
-		</div>
-
-		<div id="cards" class="row text-center">
-			<div class="col-12">
-				<h1 class="text-center">My favorite characters</h6>
-			</div>
-			<div class="col-12 col-md-4">
-				<div class="card">
-					<img class="card-img-top" src="images/bb8.jpg" alt="bb8">
-					<div class="card-block">
-					    <h2 class="card-text">BB8</h2>
+		<div class="container">
+			<!-- Slider -->
+			<div id="slider-home" class="row">
+				<div class="col-12">
+					<!-- Swiper - Addtional Librairy -->
+					<div class="swiper-container swiper-home">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img class="img-fluid" src="images/sw1.jpg" alt="image1"></div>
+							<div class="swiper-slide"><img class="img-fluid" src="images/sw2.jpg" alt="image1"></div>
+							<div class="swiper-slide"><img class="img-fluid" src="images/sw3.jpg" alt="image1"></div>
+						</div>
+						<div class="swiper-pagination swiper-pagination-bullets "></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-scrollbar"></div>
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-4">
-				<div class="card">
-					<img id="img_hover" class="card-img-top" src="images/luke.jpg" alt="luke-skywalker">
-					<div class="card-block">
-						<!-- First request -->
-					    <h2 id="name" class="card-text"></p>
+
+			<!-- Liste des personnages -->
+			<div id="characters" class="row">
+				<div class="col-12">	
+					<h1 class="text-center">The Star Wars characters</h1>
+					<ol class="row" id="list-characters">
+
+					</ol>
+
+					<div class="text-center">
+						<button id="plusbutton" class="btn btn-secondary">See more</button>
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-4">
-				<div class="card">
-					<img class="card-img-top" src="images/R2d2.jpg" alt="r2d2">
-					<div class="card-block">
-					    <h2 class="card-text">R2D2</h2>
+
+			<!-- Modales -->
+			<div id="details-characters">
+
+			</div>
+
+			<!-- Personnages favoris -->
+			<div id="cards" class="row text-center">
+				<div class="col-12">
+					<h1 class="text-center">My favorite characters</h1>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card">
+						<img class="card-img-top img-survol" src="images/bb8.jpg" alt="bb8">
+						<div class="card-block">
+							<h2 class="card-text">BB8</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card">
+						<img id="img_hover" class="card-img-top" src="images/luke.jpg" alt="luke-skywalker">
+						<div class="card-block">
+							<!-- First request -->
+							<h2 id="name" class="card-text"></h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="images/R2d2.jpg" alt="r2d2">
+						<div class="card-block">
+							<h2 class="card-text">R2D2</h2>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		
-	</div> 
-
-
+			
+		</div> <!-- Fin container -->
 	</body>
 </html>
