@@ -1,7 +1,9 @@
 Camille VIVIER - Projet Star Wars
 
 Procédure d'installation : 
-- 
+- Cloner le repository git suivant sur votre machine : https://github.com/viviecam/SMIN-502.git
+- A l'aide du terminal, se placer dans le dossier que vous venez de cloner.
+- Utiliser la commande "npm install" pour installer tous les packages nécessaires pour faire fonctionner le projet.
 
 
 Ce que je n'ai pas réussi à faire fonctionner : 
