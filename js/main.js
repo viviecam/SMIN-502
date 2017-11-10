@@ -18,19 +18,19 @@ $(document).ready(function() {
     });     
 
 /* Au survol d'une image */
-	// $( ".img-survol" ).hover(function() {
-	// 	console.log("survol");
-	// 	var myAlt = $(this).attr("alt");
-	// 	console.log(myAlt);
-	// });
+	$( ".img-survol" ).hover(function() {
+		console.log("survol");
+		var myAlt = $(this).attr("alt");
+		console.log(myAlt);
+	});
 
 
 /* Afficher dans la console et dans le h2 le “Name” retourné.*/
-	// var swapi1 = "https://swapi.co/api/people/1/?format=json";
-	// $.getJSON(swapi1, function(json) {
-	// 	console.log(json.name);
-	// 	$('h2#name').html(json.name);
-	// });
+	var swapi1 = "https://swapi.co/api/people/1/?format=json";
+	$.getJSON(swapi1, function(json) {
+		console.log(json.name);
+		$('h2#name').html(json.name);
+	});
 
 
 /* Afficher la liste des personnages et générer leurs modales correspondantes */
