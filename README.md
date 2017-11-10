@@ -11,4 +11,7 @@ Ce que je n'ai pas réussi à faire fonctionner :
 à la place des URLS dans les modales des détails des personnages.
 (J'ai tout de même laissé le code non fonctionnel en commentaire)
 
-- VueJS : j'ai tenté l'installation mais je n'ai pas réussi à le prend en main par la suite
+- VueJS : j'ai tenté l'installation mais je n'ai pas réussi à le prend en main par la suite.
+
+- Corriger l'erreur suivant : Util is not defined
+qui apparait dans la console quand une modale s'ouvre.
